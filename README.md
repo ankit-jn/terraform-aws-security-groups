@@ -40,6 +40,12 @@ Refer [Configuration Examples](https://github.com/arjstack/terraform-aws-example
 ## Nested Configuration Maps:  
 
 #### Security Group Rule [ Ingress / Egress ]
+
+- `cidr_blocks` Cannot be specified with `source_security_group_id` or `self`.
+- `ipv6_cidr_blocks` Cannot be specified with `source_security_group_id` or `self`.
+- `source_security_group_id` Cannot be specified with `cidr_blocks`, `ipv6_cidr_blocks` or `self`.
+- `self` Cannot be specified with `cidr_blocks`, `ipv6_cidr_blocks` or `source_security_group_id`.
+
 | Name | Description | Type | Default | Required | Example|
 |:------|:------|:------|:------|:------:|:------|
 | <a name="rule_name"></a> [rule_name](#input\_rule\_name) | The name of the Rule (Used for terraform perspective to maintain unicity) | `string` |  | yes | |
