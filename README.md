@@ -5,8 +5,8 @@ A Terraform module for configuring Security Groups
 ## Resources
 This module features the following components to be provisioned with different combinations:
 
-- Security Group [[aws_security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc)]
-- Security Group Rule [[aws_security_group_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc)]
+- Security Group [[aws_security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)]
+- Security Group Rule [[aws_security_group_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule)]
     - Ingress
     - Egress
 
